@@ -1,0 +1,166 @@
+/* sub1_1 css */
+/* 초기화 */
+
+* { margin: 0; padding: 0;}
+a { 
+    text-decoration: none;
+    color: #212726;
+}
+li { list-style-type: none;}
+img { border: none; }
+body { 
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #212726;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#main_gnb > .depth1 > li > a.active {
+    color: #8aa7a2;
+}
+
+/* sub1-1 header */
+#sub_header {
+    width: 1920px; height: 400px;
+    background-image: url(../imgs/new_title.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    color: #fef104;
+    text-align: center;
+
+}
+#sub_header h2,
+#sub_header h3 {
+    text-transform: uppercase; 
+}
+#sub_header h2 {
+    /* position: absolute; */
+    padding-top: 150px; 
+    font-size: 40px;
+    font-weight: 500;
+}
+#sub_header h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* sub_lnb */
+#sub_lnb {
+    width: 720px; height: 80px;
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sub_lnb ul {
+    overflow: hidden;
+}
+#sub_lnb li {
+    float: left;
+    width: 180px; height: 80px;
+    /* outline: 1px solid blue; */
+}
+
+#sub_lnb a {
+    line-height: 80px;
+    font-size: 22px;
+    font-weight: 400;
+    display: block;
+    color: #8aa7a2;
+    transition-duration: 0.8s;
+}
+#sub_lnb .active a {
+    background-image: url(../imgs/active_bar.png);
+    color: #212726;
+    font-weight: 500;
+}
+
+#sub_lnb li:hover a {
+    background-image: url(../imgs/active_bar.png);
+    color: #212726;
+    font-weight: 500;
+    transition-duration: 0.8s;
+}
+
+/* sub_main contents*/
+#sub_main {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 100px 0;
+    /* outline: 1px solid blue; */
+}
+#sub_main .first_title {
+    font-weight: 600;
+    font-size: 48px;
+}
+#sub_main .second_title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* 컨텐츠 메뉴 부분 */
+.menu_first{ 
+    margin-top: 100px;
+    /* width: 1080px; height: 500px; */
+    overflow: hidden;
+    /* outline: 1px solid red; */
+}
+.menu_first div {
+    float: left;
+    width: 346.6px; height: 500px;
+    /* outline: 1px solid blue; */
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu_first > div img {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.menu_first .hover {
+    float: left;
+    width: 346.6px; height: 500px;
+    /* outline: 1px solid blue; */
+    margin-right: 20px;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+.menu_first div:nth-child(3) {
+    margin-right: 0;
+}
+
+.menu_second{ 
+    margin-top: 100px;
+    /* width: 1080px; height: 500px; */
+    overflow: hidden;
+    /* outline: 1px solid red; */
+}
+.menu_second div {
+    float: left;
+    width: 346.6px; height: 500px;
+    /* outline: 1px solid blue; */
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu_first > div img {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.menu_second .hover {
+    float: left;
+    width: 346.6px; height: 500px;
+    /* outline: 1px solid blue; */
+    margin-right: 20px;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+.menu_second div:nth-child(3) {
+    margin-right: 0;
+}
+
