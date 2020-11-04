@@ -30,10 +30,11 @@ $(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 10000,
         arrows: false
     });
 })
+
 
 // best store 슬라이더
 
@@ -85,4 +86,20 @@ $(function(){
         })
 })
 
+// 메인페이지 탑버튼
+
+$(function(){
+    var goTop = $('#topBtn');
+    var delay = 1000;
+
+    $(window).on('scroll touchmove mousewheel DOMMouseScroll', function(){
+        if($(window).scrollTop()>=500) {
+            $(goTop).fadeIn(500);
+        } else { $(goTop).fadeOut(500); }
+    });
+
+    $(goTop).click(function(){
+        $('html, body').animate({scrollTop: 0}, delay);
+    });
+});
 
